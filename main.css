@@ -1,0 +1,187 @@
+/* Frontend Mentor part*/
+.attribution { font-size: 0.6875rem;
+    position: absolute;
+    bottom: 0rem;
+    padding-bottom: 0.625rem;
+    text-align: center;
+    color: hsl(228, 45%, 15%);
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+/*-------------------------------------------------*/
+
+* {box-sizing: border-box;}
+
+body {
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.content { 
+    position: absolute;
+    inset: 0rem; 
+    background-color: hsl(240, 73%, 65%);
+    background-image: linear-gradient(0deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
+    height: auto;
+    padding: 0rem;
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 22.6875rem;
+    height: 20.625rem;
+    padding: 1.25rem;  
+    margin: 0rem;  
+}
+
+#cont {
+    position: relative;
+    border-radius: 20px 20px 20px 20px;
+    overflow: hidden;
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    min-width: 700px;
+    height: 350px;
+    display: flex;
+    box-shadow: 0px 20px 40px 0px hsl(251, 35%, 43%); 
+}
+
+.pattern {
+    position: absolute;
+    left: -335px;
+    top: -190px;
+    max-width: 630px;
+    height: auto;
+}
+
+.womand {
+    position: absolute;
+    left: -60px;
+    top: 25px;
+    max-width: 350px;
+    height: auto;
+}
+
+.box {
+    position: absolute;
+    top: 146px;
+    left: -260px;
+    max-width: 140px;
+    height: auto;
+    z-index: 1;
+}
+
+h1 {
+    color: hsl(238, 29%, 16%);
+    font-family: "Kumbh Sans", Arial, sans-serif;
+}
+
+.txt {
+    position: absolute;
+    left: 200px;
+    padding: 0px;
+    margin: 0px;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+.accordion {
+    min-width: 300px;
+    padding: 10px 10px 10px 0px;
+    margin: 0px;
+    outline: none;
+    text-align: left;
+    background-color: hsl(0, 0%, 100%);
+    border: none;
+    cursor: pointer;
+    font: 400 12px "Kumbh Sans", Arial, sans-serif;
+    color: hsl(238, 29%, 16%);
+}
+
+.arrowD {
+    content: url("images/icon-arrow-down.svg");
+    float: right;
+}
+
+.arrowU {
+    content: url("images/icon-arrow-up.svg");
+    float: right;
+}
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.hrline {
+    border-bottom: 0.5px solid hsl(240, 5%, 91%);
+    padding-bottom: 7px;
+    margin: 0px;
+    outline: 0px;
+}
+
+.collapsed {
+    color: hsl(237, 12%, 33%);
+    font: 700 12px "Kumbh Sans", Arial, sans-serif;
+}
+
+.panel {
+    overflow: hidden;
+    max-height: 0px;
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    font: 400 12px "Kumbh Sans", Arial, sans-serif;
+    color: hsl(240, 6%, 50%);
+    transition: max-height 0.4s ease-out;
+}
+
+.womanm {
+    display: none;
+}
+
+/*For mobile devices (break point at max-widt: 830px when interface not fit to desctop)*/
+@media only screen and (max-width: 830px) {
+    .womand, .pattern, .box {
+        display: none;
+    }
+
+    #cont {
+        position: fixed;
+        left: 55px;
+        min-width: 300px;
+        height: 450px;
+    }
+
+    .womanm {
+        position: fixed;
+        display: block;
+        margin: auto;
+        top: 290px;
+        left: 85px;
+        max-width: 290px;
+        
+    }
+
+    .txt {
+        position: fixed;
+        left: 80px;
+        bottom: 280px;
+        max-width: 270px;
+    }
+
+    .accordion {
+        min-width: 270px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
