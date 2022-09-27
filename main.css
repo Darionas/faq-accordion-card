@@ -42,38 +42,38 @@ body {
 
 #cont {
     position: relative;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
     overflow: hidden;
     background-color: white;
-    margin: 0px;
-    padding: 0px;
-    min-width: 700px;
-    height: 350px;
+    margin: 0rem;
+    padding: 0rem;
+    min-width: 43.75rem;
+    height: 21.875rem;
     display: flex;
-    box-shadow: 0px 20px 40px 0px hsl(251, 35%, 43%); 
+    box-shadow: 0rem 1.25rem 2.5rem 0rem hsl(251, 35%, 43%); 
 }
 
 .pattern {
     position: absolute;
-    left: -335px;
-    top: -190px;
-    max-width: 630px;
+    left: -20.9375rem;
+    top: -11.875rem;
+    max-width: 39.375rem;
     height: auto;
 }
 
 .womand {
     position: absolute;
-    left: -60px;
-    top: 25px;
-    max-width: 350px;
+    left: -3.75rem;
+    top: 1.5625rem;
+    max-width: 21.875rem;
     height: auto;
 }
 
 .box {
     position: absolute;
-    top: 146px;
-    left: -260px;
-    max-width: 140px;
+    top: 9.125rem;
+    left: -16.25rem;
+    max-width: 8.75rem;
     height: auto;
     z-index: 1;
 }
@@ -85,24 +85,24 @@ h1 {
 
 .txt {
     position: absolute;
-    left: 200px;
-    padding: 0px;
-    margin: 0px;
-    max-width: 300px;
+    left: 12.5rem;
+    padding: 0rem;
+    margin: 0rem;
+    max-width: 18.75rem;
     height: auto;
     overflow: hidden;
 }
 
 .accordion {
-    min-width: 300px;
-    padding: 10px 10px 10px 0px;
-    margin: 0px;
+    min-width: 18.75rem;
+    padding: 0.625rem 0.625rem 0.625rem 0rem;
+    margin: 0rem;
     outline: none;
     text-align: left;
     background-color: hsl(0, 0%, 100%);
     border: none;
     cursor: pointer;
-    font: 400 12px "Kumbh Sans", Arial, sans-serif;
+    font: 400 0.75rem "Kumbh Sans", Arial, sans-serif;
     color: hsl(238, 29%, 16%);
 }
 
@@ -121,24 +121,24 @@ h1 {
 }
 
 .hrline {
-    border-bottom: 0.5px solid hsl(240, 5%, 91%);
-    padding-bottom: 7px;
-    margin: 0px;
-    outline: 0px;
+    border-bottom: 0.0313rem solid hsl(240, 5%, 91%);
+    padding-bottom: 0.4375rem;
+    margin: 0rem;
+    outline: 0rem;
 }
 
 .collapsed {
     color: hsl(237, 12%, 33%);
-    font: 700 12px "Kumbh Sans", Arial, sans-serif;
+    font: 700 0.75rem "Kumbh Sans", Arial, sans-serif;
 }
 
 .panel {
     overflow: hidden;
-    max-height: 0px;
-    margin: 0px;
-    padding: 0px;
-    outline: 0px;
-    font: 400 12px "Kumbh Sans", Arial, sans-serif;
+    max-height: 0rem;
+    margin: 0rem;
+    padding: 0rem;
+    outline: 0rem;
+    font: 400 0.75rem "Kumbh Sans", Arial, sans-serif;
     color: hsl(240, 6%, 50%);
     transition: max-height 0.4s ease-out;
 }
@@ -147,38 +147,38 @@ h1 {
     display: none;
 }
 
-/*For mobile devices (break point at max-widt: 830px when interface not fit to desctop)*/
-@media only screen and (max-width: 830px) {
+/*For mobile devices (break point at max-width: 830px when interface not fit to desctop)*/
+@media only screen and (max-width: 51.875rem) {
     .womand, .pattern, .box {
         display: none;
     }
 
     #cont {
         position: fixed;
-        left: 55px;
-        min-width: 300px;
-        height: 450px;
+        left: 3.4375rem;
+        min-width: 18.75rem;
+        height: 28.125rem;
     }
 
     .womanm {
         position: fixed;
         display: block;
         margin: auto;
-        top: 290px;
-        left: 85px;
-        max-width: 290px;
+        top: 18.125rem;
+        left: 5.3125rem;
+        max-width: 18.125rem;
         
     }
 
     .txt {
         position: fixed;
-        left: 80px;
-        bottom: 280px;
-        max-width: 270px;
+        left: 5rem;
+        bottom: 17.5rem;
+        max-width: 16.875rem;
     }
 
     .accordion {
-        min-width: 270px;
+        min-width: 16.875rem;
     }
 
     h1 {
