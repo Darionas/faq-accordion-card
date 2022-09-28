@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![FAQ_accordion_card](/images/faq_accordion_card.png)
+![FAQ_accordion_card](./images/faq_accordion_card.png)
 
 ### Links
 
