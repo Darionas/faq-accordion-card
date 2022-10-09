@@ -1,40 +1,155 @@
-/* Frontend Mentor part*/
-.attribution { font-size: 0.6875rem;
-    position: absolute;
-    bottom: 0rem;
-    padding-bottom: 0.625rem;
-    text-align: center;
-    color: hsl(228, 45%, 15%);
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Manrope&family=Open+Sans&display=swap');
+@import url(reset.css);
+@import url(FM_part.css);
+
+:root {
+    /* colors */
+    --clr-primary-bgr: hsl(240, 73%, 65%);
+    --clr-secondary-bgr: hsl(273, 75%, 66%);
+    --blue: 240, 73%, 65%;
+    --violet: 273, 75%, 66%;
+    --clr-text-darkBlue1: hsl(238, 29%, 16%);
+    --clr-text-softRed: hsl(14, 88%, 65%);
+    --clr-text-darkBlue2: hsl(237, 12%, 33%);
+    --clr-text-darkBlue3: hsl(240, 6%, 50%);
+    --clr-dividers-lightBlue: hsl(240, 5%, 91%);
+
+    /* fonts */
+    --ff-primary: 'Kumbh Sans', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
 }
 
-.attribution a { color: hsl(228, 45%, 44%); }
-/*-------------------------------------------------*/
-
-* {box-sizing: border-box;}
+html {
+    height: 100%;
+}
 
 body {
-    padding: 0rem;
-    margin: 0rem;
-}
-
-.content { 
-    position: absolute;
-    inset: 0rem; 
-    background-color: hsl(240, 73%, 65%);
-    background-image: linear-gradient(0deg, hsl(240, 73%, 65%), hsl(273, 75%, 66%));
-    height: auto;
-    padding: 0rem;
-    margin: 0rem;
+    font-size: 0.75rem;
+    font-family: var(--ff-primary);
+    min-height: 100%;
+    background-color: var(--clr-primary-bgr);
+    background-image: linear-gradient(0deg, hsl(var(--blue)), hsl(var(--violet)));
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+p {
+    line-height: 1.5;
+}
+
+/*--------------Mobile layout----------------*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "images"
+       "accordions";
+    gap: 0;
+    min-width: 9.375rem;
+    /*margin: 0 auto;*/
+    /*padding-top: 25px;*/
+}
+
+
+.images, .accordions {
+    background-color: aqua;
+    border: 2px solid grey;
+    padding: 60px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+       "pattern"
+       "womand"
+       "box";
+    gap: 0;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    position: relative;
+    margin-top: 80px;
+}
+
+.pattern {
+    position: absolute;
+    max-width: 60%;
+    top: -30px;
+    left: 80px;
+}
+
+.womand {
+    position: absolute;
+    max-width: 60%;
+    top: -20px;
+    left: 80px;
+}
+
+.box {
+    position: relative;
+
+}
+
+
+
+/*--style 1st component -mobile--*/
+/*
+.images {
+    position: relative;
+    top: 0px;
+    padding: 60px;
+    border: 2px solid green;
+    width: 100%;
+    background-color: var(--clr-dividers-lightBlue);
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+.pattern {
+    position: absolute;
+    top: -120px;
+    left: 50px;
+    max-width: 70%;
+}
+
+.womand {
+    position: absolute;
+    top: -100px;
+    left: 50px;
+    max-width: 70%;
+}
+
+.box {
+    position: absolute;
+    max-width: 80%;
+}
+*/
+
+/*
+.accordions {
+    border: 2px solid blue;
+    max-width: 300px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.womanm, .accordions {
+    display: none;
+}
+
+/*--style 2nd component mobile--*/
+/*
 .container {
     position: relative;
     display: flex;
     justify-content: center;
-    max-width: 22.6875rem;
+    max-width: 363px;
     height: 20.625rem;
     padding: 1.25rem;  
     margin: 0rem;  
@@ -80,7 +195,7 @@ body {
 
 h1 {
     color: hsl(238, 29%, 16%);
-    font-family: "Kumbh Sans", Arial, sans-serif;
+    font-family: var(--ff-primary);
 }
 
 .txt {
@@ -102,7 +217,7 @@ h1 {
     background-color: hsl(0, 0%, 100%);
     border: none;
     cursor: pointer;
-    font: 400 0.75rem "Kumbh Sans", Arial, sans-serif;
+    font: 400 0.75rem 'Kumbh Sans', sans-serif;
     color: hsl(238, 29%, 16%);
 }
 
@@ -129,7 +244,7 @@ h1 {
 
 .collapsed {
     color: hsl(237, 12%, 33%);
-    font: 700 0.75rem "Kumbh Sans", Arial, sans-serif;
+    font: 700 0.75rem 'Kumbh Sans', sans-serif;
 }
 
 .panel {
@@ -138,7 +253,7 @@ h1 {
     margin: 0rem;
     padding: 0rem;
     outline: 0rem;
-    font: 400 0.75rem "Kumbh Sans", Arial, sans-serif;
+    font: 400 0.75rem 'Kumbh Sans', sans-serif;
     color: hsl(240, 6%, 50%);
     transition: max-height 0.4s ease-out;
 }
@@ -146,42 +261,34 @@ h1 {
 .womanm {
     display: none;
 }
-
+*/
 /*For mobile devices (break point at max-width: 830px when interface not fit to desctop)*/
+/*
 @media only screen and (max-width: 51.875rem) {
-    .womand, .pattern, .box {
-        display: none;
-    }
+   
+}
+*/
 
-    #cont {
-        position: fixed;
-        left: 3.4375rem;
-        min-width: 18.75rem;
-        height: 28.125rem;
-    }
+/*----------grid area names------------------*/
 
-    .womanm {
-        position: fixed;
-        display: block;
-        margin: auto;
-        top: 18.125rem;
-        left: 5.3125rem;
-        max-width: 18.125rem;
-        
-    }
+/*---style 1st component - mobile---*/
 
-    .txt {
-        position: fixed;
-        left: 5rem;
-        bottom: 17.5rem;
-        max-width: 16.875rem;
-    }
+.images {
+    grid-area: images;
+}
 
-    .accordion {
-        min-width: 16.875rem;
-    }
+.accordions {
+    grid-area: accordions;
+}
 
-    h1 {
-        text-align: center;
-    }
+.pattern {
+    grid-area: pattern;
+}
+
+.womand {
+    grid-area: womand;
+}
+
+.box {
+    grid-area: box;
 }
