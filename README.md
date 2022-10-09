@@ -1,6 +1,8 @@
 # Frontend Mentor - FAQ accordion card solution
 
-This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). 
+This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
+
+Issue: CSS mobile is not working
 
 ## Table of contents
 
@@ -28,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![FAQ_accordion_card](/images/faq_accordion_card.png)
+![FAQ_accordion_card](./images/faq_accordion_card.png)
 
 ### Links
 
