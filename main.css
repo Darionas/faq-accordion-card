@@ -21,6 +21,11 @@
 
     --fw-400: 400;
     --fw-700: 700;
+
+    --fs-12m: 3.2vw;
+    --fs-22m: 5.867vw;
+    --fs-12d: 0.75rem;
+    --fs-22d: 1.375rem;
 }
 
 html {
@@ -28,7 +33,6 @@ html {
 }
 
 body {
-    font-size: 0.75rem;
     font-family: var(--ff-primary);
     min-height: 100%;
     background-color: var(--clr-primary-bgr);
@@ -56,7 +60,7 @@ p {
     min-width: 12.5rem;
     height: auto;
     position: relative;
-    margin: 15px;
+    margin: 0.9375rem;
 }
 
 .box {
@@ -80,7 +84,7 @@ p {
     grid-gap: 0;
     border-radius: 1.25rem;
     min-width: 12.5rem;
-    min-height: auto;
+    max-height: auto;
     background-color: var(--clr-neutral);
     padding: 0 1.25rem 1.25rem 1.25rem;
     margin-top: 11.25rem;
@@ -92,15 +96,15 @@ p {
     max-width: 65%;
     justify-self: center;
     position: absolute;
-    top: -6.875rem;
+    top: -29.333vw;
 }
 
 .womanm {
    display: flex;
    max-width: 80%;
    position: relative;
-   top: -5.625rem;
-   left: 1.5625rem;
+   top: -24vw;
+   left: 6.667vw;
    justify-self: center;
    align-items: center;    
 }
@@ -110,14 +114,14 @@ p {
 }
 
 .cont {
-   margin-top: 0;
+   margin-top: -2.5rem;
 }
 
 .heading1 {
     color: var(--clr-text-darkBlue1);
     font-weight: var(--fw-700);  
     text-align: center;
-    font-size: 1.375rem;
+    font-size: var(--fs-22m);
     padding-bottom: 0.9375rem;
 }
 
@@ -169,6 +173,7 @@ p {
 [class*='hl'] {
     border-bottom: 0.0313rem solid hsl(var(--white));
     padding-bottom: 0.4375rem;
+    font-size: var(--fs-12m);
 }
 
 [class*='a-'] {
@@ -217,23 +222,13 @@ p {
 
     .accordions {
         padding: 3.125rem;
-        min-width: 43.75rem;
+        min-width: 650px;
         min-height: 18.75rem;
         overflow: hidden;
     }
 
     .womanm {
         display: none;
-    }
-
-    .cont {
-        max-width: 18.75rem;
-        max-height: auto;
-        justify-self: right;
-    }
-
-    .heading1 {
-        text-align: left;
     }
 
     .pattern {
@@ -246,17 +241,34 @@ p {
     .womand {
         display: block;
         position: absolute;
-        left: -6.875rem;
-        max-width: 60%;
+        left: -6.25rem;
+        max-width: 55%;
     }
 
     .box {
         display: block;
         position: absolute;
-        top: 20.625rem;
-        left: -6.25rem;
+        top: 19.6875rem;
+        left: -6.875rem;
         max-width: 9.375rem;
         z-index: 1;
+        padding-left: 1.5625rem;
+    }
+
+    .cont {
+        max-width: 18.75rem;
+        max-height: auto;
+        justify-self: right;
+        margin-top: 0;
+    }
+
+    .heading1 {
+        text-align: left;
+        font-size: var(--fs-22d);
+    }
+
+    [class*='hl'] {
+        font-size: var(--fs-12d);
     }
 
 }
