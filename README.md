@@ -2,7 +2,6 @@
 
 This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam).
 
-Issue: CSS mobile is not working
 
 ## Table of contents
 
@@ -40,14 +39,15 @@ Users should be able to:
 ## My process
 
 * Set HTML layout:
-  * create flexbox to contain all image elements on the left side and accordion card on the right side.
 * Create CSS external file to set style for HTML layout:
   * Choose to use responsive web design:
-    * include meta viewport element in my web page.
-    * use rem css unit for all HTML elements.
-    * use media queries to set breakpoint for mobile devices.
+    * use grid layout module:
+      * to create mobile layout first
+      * to create desktop layout.
+    * use rem, vw css units for HTML elements to make them responsive.
+    * use media queries to set breakpoint for desktop devices.
   * Use css techniques to center vertically or horizontally.
-  * Use overflow property to hide some image elements parts, which are over the container.
+  * Use overflow property to hide some image elements parts, which are outside of the container.
   * Use z-index property to front one of overlap elements.
   * Use transition property which allows to change property values smoothly, over a given duration 
 * Create external JavaScript file:
@@ -59,25 +59,19 @@ Users should be able to:
 
 It is based on:
 
-- Semantic HTML5 markup
-- CSS (RWD):
-  - Flexbox
-  - overflow
-  - z-indexs
-  - transition
-  - css unit (rem)
-  - media queries
-- JavaScript:
-  - toggle icons and accordion's hide/show element
+- HTML
+- CSS (RWD)
+- JavaScript
 
 ### What I learned
 
 In this challange I learned:
 
+- Use grid layout module
 - Positioning images
 - Set z-index property on elements
 - create hoverable, interactive accordion's to hide/show it's elements.
-- Set media queries for mobile devices (break point at max-widt: 830px when interface not fit to desctop)
+- Set media queries for devices.
 
 ### Continued development
 
@@ -86,6 +80,8 @@ In this challange I learned:
 
 ### Useful resources
 
+- [w3schools](https://www.w3schools.com/css/css_grid.asp) - It's explains how to implement grid layout module.
+- [yutube](https://www.youtube.com/playlist?list=PL4cUxeGkcC9itC4TxYMzFCfveyutyPOCY) - Great tutorial about grid layout for beginners.
 - [w3schools](https://www.w3schools.com/css/css_positioning.asp) - This helped me for positioning elements.
 - [w3schools](https://www.w3schools.com/css/css_z-index.asp) - This lets me set priorities for elements, which element should be placed in front of, or behind, the others.
 - [w3schools](https://www.w3schools.com/css/css3_mediaqueries.asp) - It lets me ajust screen for mobile devices at specified breakpoint.
@@ -98,3 +94,4 @@ In this challange I learned:
 ## Acknowledgments
 
 Thank you Frontend Mentor team for opportunity to try, practice, train yourself in different level challenges and gain invaluable experience.
+Thank you @Vikram from Frontend Mentor for guidance.
