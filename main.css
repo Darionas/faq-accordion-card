@@ -131,7 +131,8 @@ p {
     grid-template-areas: 
        'a-1'
        'p-1'
-       'arrowD';
+       'arrowD'
+       'arrowU';
 }
 
 .hl2 {
@@ -140,7 +141,8 @@ p {
     grid-template-areas: 
        'a-2'
        'p-2'
-       'arrowD';
+       'arrowD'
+       'arrowU';
 }
 
 .hl3 {
@@ -149,7 +151,8 @@ p {
     grid-template-areas: 
        'a-3'
        'p-3'
-       'arrowD';
+       'arrowD'
+       'arrowU';
 }
 
 .hl4 {
@@ -158,7 +161,8 @@ p {
     grid-template-areas: 
        'a-4'
        'p-4'
-       'arrowD';
+       'arrowD'
+       'arrowU';
 }
 
 .hl5 {
@@ -167,13 +171,14 @@ p {
     grid-template-areas: 
        'a-5'
        'p-5'
-       'arrowD';
+       'arrowD'
+       'arrowU';
 }
 
 [class*='hl'] {
     border-bottom: 0.0313rem solid hsl(var(--white));
-    padding-bottom: 0.4375rem;
     font-size: var(--fs-12m);
+    padding-bottom: 0.533vw;
 }
 
 [class*='a-'] {
@@ -202,13 +207,13 @@ p {
 .arrowD {
     content: url('images/icon-arrow-down.svg');
     float: right;
-    padding: 0.3125rem 0 0 1.25rem;
+    width: 2.667vw;
 }
 
 .arrowU {
     content: url('images/icon-arrow-up.svg');
     float: right;
-    padding-left: 0.3125rem 0 0 1.25rem;
+    width: 2.667vw;
 }
 
 .collapsed {
@@ -269,6 +274,14 @@ p {
 
     [class*='hl'] {
         font-size: var(--fs-12d);
+    }
+
+    .arrowD {
+        width: 10px;
+    }
+    
+    .arrowU {
+       width: 10px;
     }
 
 }
@@ -334,6 +347,10 @@ p {
 
 .arrowD {
     grid-area: arrowD;
+}
+
+.arrowU {
+    grid-area: arrowU;
 }
 
 .a2 {
