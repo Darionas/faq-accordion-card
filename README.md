@@ -93,5 +93,5 @@ In this challange I learned:
 
 ## Acknowledgments
 
-Thank you Frontend Mentor team for opportunity to try, practice, train yourself in different level challenges and gain invaluable experience.
-Thank you @Vikram from Frontend Mentor for guidance.
+- Thank you Frontend Mentor team for opportunity to try, practice, train yourself in different level challenges and gain invaluable experience.
+- Thank you @Vikram from Frontend Mentor for guidance.
